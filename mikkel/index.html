@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO Custom Map Picker</title>    
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+   <h1>CS:GO Custom Map Picker</h1>
+   <div id="picker">
+       <select id="number_of_maps" onchange="capture(this)">
+          <option value="one">1</option>
+          <option value="two">2</option>
+          <option value="three">3</option>
+          <option value="four">4</option>
+          <option value="five">5</option>
+           <option value="six">6</option>
+           <option value="seven">7</option>
+           <option value="eight">8</option>
+           <option value="nine">9</option>
+           <option value="ten">10</option>
+       </select>
+       <button id="confirm_button" onclick="rollMap()">Confirm</button>
+   </div>
+   <div id="chosen_maps">
+       <p>This map was chosen</p>
+   </div>
+    <script type="text/javascript"> 
+        function capture(x) 
+        {
+            return x.value;
+        }
+        function rollMap() 
+        {
+            
+        }
+    </script>    
+</body>
+</html>
