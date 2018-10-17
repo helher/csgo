@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <script src="main.js"></script>
 <html>
-    <head>
-        <title>CSGO</title>
-    </head>
-    <body>
-        <input type="button" value="Get a CSGO map" onclick="GetValue()" />
-        <p id="message" ></p>
-    </body>
+
+<head>
+    <title>CSGO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,400" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Counter Strike: Global Offensive - Map picker</h1>
+
+    <div id="buttons">
+        <div class="button" onclick="GetValue()">
+            <p>Just the usual</p>
+        </div>
+
+        <div class="button" onclick="GetJoker()">
+            <p>Feelin' lucky?</p>
+        </div>
+    </div>
+    <div id="output">
+        <p id="message"></p>
+    </div>
+</body>
+
 </html>
